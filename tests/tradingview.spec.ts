@@ -19,7 +19,7 @@ test.beforeEach(async ({ page, siteTopMenu }) => {
   });
 });
 
-test('Take screenshots of technicals gauge for the alphabet stock', async ({ chartPage, browserName }, testInfo) => {
+test('Take screenshots of technicals gauge for the alphabet stock', async ({ chartPage }, testInfo) => {
   await test.step('Switch to Alphabet stock', async () => {
     // here we have different options to choose alphabet. decided to use stock screener
     const alphabet = 'Alphabet Inc';
