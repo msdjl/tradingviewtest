@@ -10,6 +10,8 @@ Install nodejs, then
 
 `npm i`
 
+`npx playwright install --with-deps`
+
 `npx playwright test`
 
 `npx playwright show-report`
