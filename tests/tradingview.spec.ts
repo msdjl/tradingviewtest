@@ -22,12 +22,12 @@ test.beforeEach(async ({ page, siteTopMenu }) => {
 test('Take screenshots of technicals gauge for the alphabet stock', async ({ chartPage, browserName }, testInfo) => {
   await test.step('Switch to Alphabet stock', async () => {
     // here we have different options to choose alphabet. decided to use stock screener
-    const aplhabet = 'Alphabet Inc';
+    const alphabet = 'Alphabet Inc';
     const footer = chartPage.footerWidget;
     await footer.openStockScreener();
-    await footer.stockScreener.search(aplhabet);
+    await footer.stockScreener.search(alphabet);
     await footer.stockScreener.selectFirstStock();
-    await chartPage.detailsWidget.waitForStock(aplhabet);
+    await chartPage.detailsWidget.waitForStock(alphabet);
   });
 
   await test.step('Take screenshots of the Technicals gauge', async () => {
