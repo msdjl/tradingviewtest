@@ -1,4 +1,4 @@
-import { test, expect } from '../testBase';
+import { test, expect } from './testBase';
 
 /* task:
 1. Перейти на https://www.tradingview.com/

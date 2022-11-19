@@ -1,6 +1,6 @@
 import { test as base } from '@playwright/test';
-import { SiteTopMenu } from './components/SiteTopMenu';
-import { ChartPage } from './components/chartPage/ChartPage';
+import { SiteTopMenu } from '../components/SiteTopMenu';
+import { ChartPage } from '../components/chartPage/ChartPage';
 
 type MyFixtures = {
   siteTopMenu: SiteTopMenu;
