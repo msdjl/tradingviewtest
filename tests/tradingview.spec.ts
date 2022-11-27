@@ -40,7 +40,7 @@ test('Take screenshots of technicals gauge for the alphabet stock', async ({ cha
     const widgetScreenshot = await details.container.screenshot();
     await testInfo.attach(`details_widget`, { body: widgetScreenshot, contentType: 'image/png' });
 
-    // here we could also compare screenshots with baselines but I didn't find a way to mock the gauge in short time
-    // await expect(chartPage.detailsWidget.technicalGauge).toHaveScreenshot();
+    // here we only save screenshots to test reports
+    // there is also a test file with visual tests of the mocked technicals gauge
   });
 });
