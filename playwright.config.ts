@@ -15,7 +15,7 @@ const config: PlaywrightTestConfig = {
 
   // there are differences between headed and headless rendered images so I decided to store separate baselines for them
   // so before before commiting visual test changes we need to run them in headless mode with CI=true env var
-  snapshotPathTemplate: `./__screenshots__/${process.env.CI ? 'CI' : 'local'}/{testFilePath}/{projectName}/{arg}{ext}`,
+  snapshotPathTemplate: `./__screenshots__/${process.env.CI ? 'CI' : 'local'}/{platform}/{testFilePath}/{projectName}/{arg}{ext}`,
   /* Maximum time one test can run for. */
   timeout: 60 * 1000,
   expect: {
